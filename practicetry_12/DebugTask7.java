@@ -13,7 +13,7 @@ public class DebugTask7 {
     public static synchronized void withdraw(int amount) {
         if (balance >= amount) {
             try { Thread.sleep(100); } catch (InterruptedException e) { }
-            balance -= amount;                                                     //почему такое фин сообщение, в дебаг пройтись
+            balance -= amount;                                                    
             System.out.println("New balance: " + balance);
         }
     }
